@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Solicitud de Interesados</title>
-  <link rel="stylesheet" href="GenerarSolicitud.css">
+  <link rel="stylesheet" href="SolicitudPagado.css">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,25 +20,26 @@
 </head>
 <body>
   <div class="container">
-    <h1>Solicitud de Interesados</h1>
+    <h1>Solicitud Pagado</h1>
     <form action="#" method="post" enctype="multipart/form-data">
       <div class="form-group">
         <label for="dni">Número de DNI:</label>
-        <input type="text" id="dni" name="dni" required>
+        <input type="text" id="dni" name="dni" placeholder="12345678" disabled>
       </div>
       <div class="form-group">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre" placeholder="Luis Miguiel" disabled>
       </div>
       <div class="form-group">
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
+        <input type="text" id="apellido" name="apellido" placeholder="Luyo Paucar" disabled>
       </div>
       <div class="form-group">
         <label for="titulo">Adjuntar Título Profesional:</label>
-        <input type="file" id="titulo" name="titulo" accept=".pdf, .doc, .docx" required>
+        <input type="file" id="titulo" name="titulo" accept=".pdf, .doc, .docx" placeholder="documento.docx" disabled>
+        <p>*Pago Realizado Exitosamente. Clic en Ver Carnet para poder visualizar su Carnet</p>
       </div>
-      <button type="submit">Enviar Solicitud</button>
+      <a href="VerCarnet.html"><button type="button">Ver Carnet</button></a>
     </form>
   </div>
 </body>
